@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+<title>A Select Example</title>
+<script type="text/javascript" src="jquery-1.7.2.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$("#starselect").change(function(eventObj) {
+		alert($("#starselect").val());
+	});
+});
+</script>
+</head>
+<body>
+<p>A Basic Select Example</p>
+<form id="starform" action="">
+Select A Constellation:
+<select name="startype" id="starselect">
+<option selected="selected"> </option>
+<option value="Aquila">Aquila</option>
+<option value="Centaurus">Centaurus</option>
+<option value="Canis Major">Canis Major</option>
+<option value="Canis Minor">Canis Minor</option>
+<option value="Corona Borealis">Corona Borealis</option>
+<option value="Crux">Crux</option>
+<option value="Cygnus">Cygnus</option>
+<option value="Gemini">Gemini</option>
+<option value="Lyra">Lyra</option>
+<option value="Orion">Orion</option>
+<option value="Taurus">Taurus</option>
+<option value="Ursa Major">Ursa Major</option>
+<option value="Ursa Minor">Ursa Minor</option>
+</select>
+</form>
+</body>
+</html>
+
